@@ -1,9 +1,6 @@
-const galeria = document.getElementById('galeria');
 const slider = document.querySelector('.galery_items')
 const itemsGaleria = [...document.querySelectorAll('.item_galery')];
 
-const btnNext = document.querySelector('.siguiente');
-const btnPrev = document.querySelector('.anterior');
 let witdh = itemsGaleria[0].clientWidth;
 let indice = 1;
 
@@ -15,7 +12,6 @@ window.addEventListener('resize', ()=>{
 });
 
 function nextElement(){
-    // console.log(indice)
     slider.style.transform = `translateX(-${indice * witdh}px)`;
     slider.style.transition = "transform 0.8s ease";
     indice++;
@@ -28,23 +24,6 @@ function nextElement(){
     }
 }
 
-function previousElement(){
-    indice--;
-    if(indice < 0){
-        indice = itemsGaleria.length - 1;
-    }
-    console.log(indice);
-    slider.style.transform = `translateX(-${indice * witdh}px)`;
-    slider.style.transition = "transform 0.8s ease"
-
-}
-btnNext.addEventListener('click', () =>{
-    nextElement()
-})
-
-btnPrev.addEventListener('click', () =>{
-    previousElement()
-})
 
 setInterval(() => {
     nextElement();
