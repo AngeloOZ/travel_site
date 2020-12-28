@@ -34,7 +34,7 @@ body{
 .enlaces{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 40%;
 }
 .enlace{
     position: relative;
