@@ -3,24 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Slider V2</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&family=Unica+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/736596057b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aventurate y vive Tours</title>
 </head>
 <body>
-    <div class="galery" id="galeria">
-        <div class="galery_items">
-            <div class="item_galery" data-indice="0">
-                <img src="img/5.jpg" alt="">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Aventurate y vive Tours</div>
+            <div class="enlaces">
+                <a href="#" class="enlace">Quienes somos</a>
+                <a href="#" class="enlace">Galeria</a>
+                <a href="#" class="enlace">Paquetes</a>
+                <a href="#" class="enlace">Contactos</a>
             </div>
-            <div class="item_galery" data-indice="1">
-                <img src="img/2.jpg" alt="">
+        </nav>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h2>Ven y disfruta de los placeres de la naturaleza 1</h2>
+                    <img src="./img/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h2>Ven y disfruta de los placeres de la naturaleza 2</h2>
+                    <img src="./img/2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <h2>Ven y disfruta de los placeres de la naturaleza 3</h2>
+                    <img src="./img/3.jpg" alt="">
+                </div>
             </div>
-            <div class="item_galery" data-indice="2">
-                <img src="img/5.jpeg" alt="">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </header>
+    <section class="our_services">
+        <h2 class="sub_title">Nuestros Servicios</h2>
+        <div class="cont_servicios">
+            <article class="servicio">
+                <img class="servicio_img" src="img/icons/trekking.svg" alt="">
+                <h3 class="servicio_title">Guías</h3>
+                <p class="servicio_parrafo">Personal altamente capacitado.</p>
+            </article>
+            <article class="servicio">
+                <img class="servicio_img" src="img/icons/control-de-calidad.svg" alt="">
+                <h3 class="servicio_title">Calidad</h3>
+                <p class="servicio_parrafo">Los mejores precios del mercado.</p>
+            </article>
+            <article class="servicio">
+                <img class="servicio_img" src="img/icons/intelectual.svg" alt="">
+                <h3 class="servicio_title">Aprendizaje</h3>
+                <p class="servicio_parrafo">Conoce más sobre tú país.</p>
+            </article>
+            <article class="servicio">
+                <img class="servicio_img" src="img/icons/seguro.svg" alt="">
+                <h3 class="servicio_title">Seguridad</h3>
+                <p class="servicio_parrafo">Tu preocupate de disfrutar, nosotros te cuidamos.</p>
+            </article>
+        </div>
+    </section>
+    <section class="type_tourist">
+        <div class="parallax" data-parallax-image="img/cascada.jpg"></div>
+        <h2 class="sub_title tipos">Tipos de turismo</h2>
+        <div class="cont_tipos">
+            <div class="tipo">
+                <img src="img/tipos/montanas.svg" alt="" class="tipo_img">
+                <p class="tipo_titulo">Aventura</p>
+            </div>
+            <div class="tipo">
+                <img src="img/tipos/excursionismo.svg" alt="" class="tipo_img">
+                <p class="tipo_titulo">Senderismo</p>
+            </div>
+            <div class="tipo">
+                <img src="img/tipos/rapel.svg" alt="" class="tipo_img">
+                <p class="tipo_titulo">Rapel</p>
+            </div>
+            <div class="tipo">
+                <img src="img/tipos/aventurero.svg" alt="" class="tipo_img">
+                <p class="tipo_titulo">Caminata</p>
+            </div>
+            <div class="tipo">
+                <img src="img/tipos/ciclismo.svg" alt="" class="tipo_img">
+                <p class="tipo_titulo">Ciclismo</p>
             </div>
         </div>
-    </div>
+    </section>
+    <main class="main_paquetes">
+        <h2 class="sub_title">Nuestros Paquetes</h2>
+        <div class="cont_paquetes">
+            <div class="paquete">
+                <img src="img/paquetes/paquete.jpeg" alt="" class="paquete_img">
+                <article class="paquete_article">
+                    <h3 class="paquete_titulo">Entre páramo y selva</h3>
+                    <p class="paquete_parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita optio quas itaque pariatur nam, fuga iusto, deleniti consequatur commodi quisquam, et quaerat unde ad odio! Id.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus provident cupiditate, nihil expedita eaque illum ex impedit qui Beatae doloribus quod pariatur.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab officiis aliquam itaque voluptatem dolorem, quia odio soluta porro impedit a sequi at esse quidem commodi.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis totam adipisci quasi tempora ullam quas voluptas aut omnis porro molestias, emporibus incidunt quo praesentium harum.  
+                    </p>
+                    <a href="#" class="btn_paquete">Más Información</a>
+                </article>
+            </div>
+            <div class="paquete">
+                <img src="img/paquetes/paquete.jpeg" alt="" class="paquete_img">
+                <article class="paquete_article">
+                    <h3 class="paquete_titulo">Entre páramo y selva</h3>
+                    <p class="paquete_parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita optio quas itaque pariatur nam, fuga iusto, deleniti consequatur commodi quisquam, et quaerat unde ad odio! Id.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus provident cupiditate, nihil expedita eaque illum ex impedit qui Beatae doloribus quod pariatur.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab officiis aliquam itaque voluptatem dolorem, quia odio soluta porro impedit a sequi at esse quidem commodi.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis totam adipisci quasi tempora ullam quas voluptas aut omnis porro molestias, emporibus incidunt quo praesentium harum.  
+                    </p>
+                    <a href="#" class="btn_paquete">Más Información</a>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="logo_footer">Aventurate y vive Tours</div>
+        <div class="social_media">
+            <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
 
-    <script src="index.js"></script>
+
+    <script src="js/universal-parallax.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
